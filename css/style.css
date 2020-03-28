@@ -1,9 +1,11 @@
+@media screen and (min-width: 1000px){
+    
 #body1 {   
     background-image: url("/img/audirs6.jpg");
     background-size: 100%;
     background-color: black;
     margin: 0;
-    
+    background-repeat: no-repeat;
 }
 #modeller_body {   
     background-color: rgb(241, 241, 241);
@@ -45,7 +47,7 @@
 }
 
 #aterforsaljare_container{
-        display: grid;
+    display: grid;
     width: 100%;
     height: 100vh;
     grid-template-rows: 1fr 8fr 0fr;
@@ -261,10 +263,14 @@ ul li a {
     color: black;
 }
 
-.vit_nav {
+.menu{
 background-color: white;
 position: fixed;
 width: 100%;
+}
+
+#alpha{
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .vit_nav2 {
@@ -295,6 +301,394 @@ height: auto;
 width: auto;
 }
 
+#m-karta{
+    display: none;
+}
+
 #audi-history-bild{
     width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 375px){
+
+
+    .menu{
+        height: 100vh;
+        width: 80vw;
+        background: rgb(0, 0, 0);
+        position: fixed;
+        top: 0;
+        left: -90vw;
+        transition: left 0.3s;
+        box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+        z-index: 10;
+    }
+    
+    .menu-button{
+        cursor: pointer;
+        display: inline;
+        color: white;
+        padding: 1em;
+    }
+    
+    .menu-button i.material-icons{
+        font-size: 2.5rem;
+    }
+    
+    .show-menu{
+        left: 0;
+        
+    }
+    
+    .fade{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: none;
+        z-index: 5;
+    }
+    
+    .visible{
+        display: block;
+    }
+    
+    
+
+
+
+
+
+
+    #body1 {   
+        background-image: url("/img/phone-background.jpg");
+        background-size: 100%;
+        
+        background-color: black;
+        margin: 0;
+        
+    }
+    #modeller_body {   
+        background-color: rgb(241, 241, 241);
+        margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    #aterforsaljare_body {   
+        background-color: rgb(241, 241, 241);
+        margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    #container {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-rows: 1fr 8fr 0fr; 
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "ft"
+        ;
+        color: white;
+    }
+    
+    #modeller_container {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-rows: 1fr 8fr 0fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "ft"
+        ;
+        color: black;
+    }
+    
+    #aterforsaljare_container{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-rows: 0fr 8fr 0fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "ft"
+        ;
+        color: black;
+    }
+    
+    #index_main {
+        grid-area: main;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #modeller_main {
+        grid-area: main;
+        margin: 1em;
+        background-color: rgb(241, 241, 241);
+        display: grid;
+        padding: 0px;
+        grid-template-rows:; 
+        grid-template-columns:;
+        grid-template-areas:
+        "h1"
+        "section1"
+        "section2"
+        "section3" 
+        "section4"
+        ;
+    }
+    
+    #aterforsaljare_main{
+        text-align: center;
+    }
+    
+    #historia_main {
+        padding: 1em;
+    }
+    
+    #modeller {
+        grid-area: h1;
+        margin-inline-start: 
+    }
+    
+    #section1 {
+        grid-area: section1;
+        background-color: rgb(241, 241, 241);
+        display: grid;
+        padding-bottom: 5em;
+        grid-template-rows: 0fr 300px 300px; 
+        grid-template-columns:320px;
+        grid-template-areas:
+        "h2"
+        "section1_1"
+        "section1_2"
+        ;
+    }
+    
+    #section2 {
+        grid-area: section2;
+        background-color: rgb(241, 241, 241);
+        display: grid;
+        padding-bottom: 5em;
+        grid-template-rows: 0fr 300px 300px; 
+        grid-template-columns:320px;
+        grid-template-areas:
+        "h2"
+        "section2_1"
+        "section2_2"
+        ;
+    }
+    
+    #section3 {
+        grid-area: section3;
+        background-color: rgb(241, 241, 241);
+        display: grid;
+        padding-bottom: 5em;
+        grid-template-rows: 0fr 300px 300px; 
+        grid-template-columns:320px;
+        grid-template-areas:
+        "h2"
+        "section3_1"
+        "section3_2"
+        ;
+    }
+    
+    #section4 {
+        grid-area: section4;
+        background-color: rgb(241, 241, 241);
+        display: grid;
+        padding: 0em;
+        grid-template-rows: 0fr 300px 300px; 
+        grid-template-columns:320px;
+        grid-template-areas:
+        "h2"
+        "section4_1"
+        "section4_2"
+        ;
+    }
+    
+    #section1_1{
+     grid-area: section1_1;
+     background-color: white;
+     margin: 10px;
+     padding: 10px;
+     display: grid;
+     justify-content: space-between;
+    }
+    
+    #section1_2{
+        grid-area: section1_2;
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+        display: grid;
+        justify-content: space-between;
+    }
+    
+    #section2_1{
+        grid-area: section2_1;
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+        display: grid;
+        justify-content: space-between;
+       }
+       
+    #section2_2{
+           grid-area: section2_2;
+           background-color: white;
+           margin: 10px;
+           padding: 10px;
+           display: grid;
+           justify-content: space-between;
+        }
+    
+    #section3_1{
+        grid-area: section3_1;
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+        display: grid;
+        justify-content: space-between;
+       }
+       
+    #section3_2{
+           grid-area: section3_2;
+           background-color: white;
+           margin: 10px;
+           padding: 10px;
+           display: grid;
+           justify-content: space-between;
+        }
+    
+    #section4_1{
+        grid-area: section4_1;
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+        display: grid;
+        justify-content: space-between;
+       }
+       
+    #section4_2{
+           grid-area: section4_2;
+           background-color: white;
+           margin: 10px;
+           padding: 10px;
+           display: grid;
+           justify-content: space-between;
+        }
+    
+    #audilogga {
+        height: 10em;
+    }
+    
+    nav {
+        grid-area: nav;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    }
+    
+    h1{
+        font-size: 3em;
+        margin: 0;
+    }
+    
+    footer {
+        grid-area: ft;
+    }
+    
+    ul {
+        list-style-type: none;
+        
+    }
+    
+    ul li {
+        padding: 0.35em;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 0.35em 0.9em;
+        border: 1px solid rgba(255, 255, 255, 0);
+        font-size: 1.2em;
+    }
+
+    #red {
+        color: rgb(209, 0, 0);
+    }
+
+    
+    .vit_nav2 {
+        background-color: white;
+        height: 64px;
+        width: 100%;
+        }
+    
+    footer p{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .h2_mod{
+        grid-area: h2;
+        margin: 10px;
+    }
+    
+    .p_mod{
+        font-size: 13px;
+    }
+    
+    .bil_bilder{
+        width: 280px;  
+    }
+    
+    #karta{
+    height: auto;
+    width: 100vw;
+    display: none;
+    }
+    
+    #m-karta{
+        height: 82vh;
+        width: auto;
+    }
+
+    #audi-history-bild{
+        width: 100%;
+    }
+
+    .streck {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+      }
+
+    .streck-vit {
+        width: 35px;
+        height: 5px;
+        background-color: rgb(255, 255, 255);
+        margin: 6px 0;
+    }
 }
